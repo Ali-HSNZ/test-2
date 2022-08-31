@@ -36,9 +36,9 @@ const Categories = ({isDropDownList , setIsDropDownList , categories}) => {
 						همه مقالات
 					</a>
 				</Link>
-				{categories.map(category => {
+				{categories.map((category,index) => {
 					return(
-						<Link href={`/blogs/${category.englishTitle}`}>
+						<Link key={index} href={`/blogs/${category.englishTitle}`}>
 							<a className="py-3 border border-purple-200 w-full px-4 hover:bg-purple-200  text-sm ">
 								{category.title}
 							</a>

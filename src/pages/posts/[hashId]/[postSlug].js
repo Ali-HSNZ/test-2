@@ -17,7 +17,7 @@ import { Button } from "@mui/material";
 import PostComment from "@/components/postComment";
 
 
-const postSlug = ({post}) => {
+const PostSlug = ({post}) => {
 
 
 	const [copyState , setCopyState] = useState({value: '',copied: false,})
@@ -122,7 +122,7 @@ const postSlug = ({post}) => {
 	);
 }
  
-export default postSlug;
+export default PostSlug;
 
 
 export const getStaticPaths = async () => {
